@@ -1,0 +1,12 @@
+<div class="e-sf-tf-content">
+  <h2>Izmeni:</h2>
+  <div class="content" id="edit">
+    <input type="text" placeholder="{{usersrc.user.first_name}}"><br/>
+    <input type="text" placeholder="{{usersrc.user.last_name}}"><br/>
+    <input type="text" placeholder="Stara lozinka"><br/>
+    <input type="text" placeholder="Nova lozinka"><br/>
+    <input type="text" placeholder="Ponovi novu lozinku"><br/>
+    <button [routerLink]="['/user']" onclick="alert('Podaci uspešno izmenjeni')">Sačuvaj izmene</button>
+  </div>
+  <button class="back_button" [routerLink]="['/user']">Nazad</button>
+</div>

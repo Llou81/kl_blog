@@ -1,0 +1,9 @@
+<div class="e-sf-tf-content">
+  <h2>Tipovi:</h2>
+  <ul>
+    <li *ngFor="let match of tipsvc.matches">
+      <a [routerLink]="['/detailed']"><b>{{match.sport}}:</b> {{match.home}} - {{match.away}} Tip: {{match.tip}}</a><hr/>
+    </li>
+  </ul>
+  <button class="back_button" [routerLink]="['/user']">Nazad</button>
+</div>

@@ -1,0 +1,21 @@
+<div class="login container">
+  <h1>Kladioničarski Blog</h1>
+  <div id="logovanje">
+    <button [routerLink]="['user']" (click)="$event; hideShow('logovanje', 'pozdrav')">Uloguj se</button>
+    <input type="text" placeholder="Lozinka"/>
+    <input type="text" placeholder="Korisnicko ime"/>
+  </div>
+  <div class="dropdown">
+    <div id="pozdrav">
+      <h3>Dobrodošli, {{usersrc.user.username}}</h3>
+      <div class="dropdown_content">
+        <a [routerLink]="['user']">{{usersrc.user.username}}</a>
+        <a [routerLink]="['edit']">Izmeni podatke</a>
+        <a [routerLink]="['add']">Dodaj tip</a>
+        <a [routerLink]="['tips']">Svi tipovi</a>
+        <a [routerLink]="['stats']">Detaljna statistika</a>
+        <a [routerLink]="['']" (click)="$event; hideShow('pozdrav', 'logovanje')">Izloguj se</a>
+      </div>
+    </div>
+  </div>
+</div>

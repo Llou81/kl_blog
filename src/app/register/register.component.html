@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="content">
+    <input [(ngModel)]="user.first_name" type="text" placeholder="Ime"><br />
+    <input [(ngModel)]="user.last_name" type="text" placeholder="Prezime"><br />
+    <input [(ngModel)]="user.email" type="text" placeholder="E-mail"><br />
+    <input [(ngModel)]="user.username" type="text" placeholder="Korisničko ime"><br />
+    <input [(ngModel)]="user.password" type="text" placeholder="Lozinka"><br />
+    <input [(ngModel)]="secPassField" type="text" placeholder="Ponovi lozinku"><br />
+    <button (click)="register()" [routerLink]="['/']">Registruj se</button>
+  </div>
+</div>

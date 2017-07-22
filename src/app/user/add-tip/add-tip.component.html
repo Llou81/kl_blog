@@ -1,0 +1,33 @@
+<div class="e-sf-tf-content">
+  <h2>Dodaj tip:</h2>
+  <div id="add_tip">
+    <input [(ngModel)]="tip.date" type="datetime-local" placeholder="dd.mm.yy"/><br/>
+    <select [(ngModel)]="tip.sport">
+      <option value="fudbal" selected="selected">Fudbal</option>
+      <option value="kosarka">Košarka</option>
+      <option value="rukomet">Rukomet</option>
+      <option value="tenis">Tenis</option>
+      <option value="ostalo">Ostalo</option>
+    </select>
+    <input [(ngModel)]="tip.home" type="text" placeholder="Domaćin"/>
+    <input [(ngModel)]="tip.away" type="text" placeholder="Gost"/>
+    <input [(ngModel)]="tip.tip" type="text" size="5" placeholder="Tip"/><br/>
+    <select [(ngModel)]="tip.stake" >
+      <option value="1" selected="selected">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+    <span>/10 @ </span>
+    <input [(ngModel)]="tip.odd" size="5" placeholder="Kvota"/><br/>
+    <textarea [(ngModel)]="tip.description" rows="10" cols="70"></textarea><br/>
+    <button (click)="addTip()">Dodaj tip</button>
+  </div>
+  <button class="back_button" [routerLink]="['/user']">Nazad</button>
+</div>

@@ -1,0 +1,10 @@
+<div id="tips_content">
+  <h3>Poslednjih 10 tipova:</h3>
+  <ul>
+    <li *ngFor="let match of tipsvc.matches">
+      <a [routerLink]="['/detailed']"><b>{{match.sport}}:</b> {{match.home}} - {{match.away}} Tip: {{match.tip}}</a><hr/>
+    </li>
+  </ul>
+  <button [routerLink]="['/tips']">Svi Tipovi</button>
+  <button [routerLink]="['/add']">Dodaj Tip</button>
+</div>

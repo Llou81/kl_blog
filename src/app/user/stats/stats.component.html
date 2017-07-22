@@ -1,0 +1,7 @@
+<div id="stats_content">
+  <h3>Statistika:</h3>
+  <ul>
+    <li *ngFor="let item of stats">{{item[0]}}: {{item[1]}}<hr/></li>
+  </ul>
+  <button [routerLink]="['/stats']">Detaljnije</button>
+</div>
