@@ -15,10 +15,15 @@ hr {
   margin-right: 2%;
 }
 input {
+  text-indent: 5px;
   margin-bottom: 15px;
   border-radius: 10px;
+  border: none;
 }
 select {
+  border-radius: 10px;
+}
+img {
   border-radius: 10px;
 }
 textarea {
@@ -39,6 +44,10 @@ a:hover {
   align-items: center;
   margin-top: 12%;
   text-align: center;
+}
+.reg_btn {
+  background-color: darkred;
+  color: aliceblue;
 }
 .main {
   color: darkred;
